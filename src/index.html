@@ -3,12 +3,80 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Promineo Tech Week 7</title>
+    <title>F1 Racers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" />
   </head>
   <body>
-    <h1>Promineo Tech Week 10</h1>
-    <button id="button" />
+    <h1 class="ml-5 mt-3 mb-2">F1 Racers</h1> 
+    <div class="container text-center">
+      <div class="row">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Team</th>
+            </tr>
+          </thead>
+          <tbody id="drivers">
+            <tr>
+              <td>Max</td>
+              <td>Verstappen</td>
+              <td>Red Bull Racing</td>
+            </tr>
+            <tr>
+              <td>Sergio</td>
+              <td>Perez</td>
+              <td>Red Bull Racing</td>
+            </tr>
+            <tr>
+              <td>George</td>
+              <td>Russell</td>
+              <td>Mercedes</td>
+            </tr>
+            <tr>
+              <td>Lewis</td>
+              <td>Hamilton</td>
+              <td>Mercedes</td>
+            </tr>
+            <tr>
+              <td>Charles</td>
+              <td>Leclerc</td>
+              <td>Ferrari</td>
+            </tr>
+            <tr>
+              <td>Carlos</td>
+              <td>Sainz</td>
+              <td>Ferrari</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row ml-2">
+        New Driver
+      </div>
+      <div class="row mb-2">
+        <div class="col-10">
+          <div class="input-group">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control" id="first" placeholder="First Name">
+            <input type="text" aria-label="Last name" class="form-control" id="last" placeholder="Last Name">
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-5">
+          <div class="input-group">
+            <span class="input-group-text">Team</span>
+            <input type="text" aria-label="Team" class="form-control width-2" id="team">
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary mb-5" id="btn">Add Driver</button>
+    </div>
     <script src="./javascript.js"></script>
   </body>
 </html>
